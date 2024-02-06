@@ -1,0 +1,96 @@
+.wrapper{
+  display: flex;
+  flex-flow: row wrap;
+  text-align: center;
+}
+
+.wrapper > * {
+  padding: 10px;
+  margin: 10px;
+  flex: 1 100%;
+  border-radius: 10px;
+}
+
+.header{
+  background-color: tomato;
+  height: 10vh;
+}
+
+.footer{
+  background: lightgreen;
+  height: 5vh;
+}
+
+.main{
+  text-align: center;
+  background-color: lightblue;
+  height: 50vh;
+  font-size: 24px;
+}
+
+.team2{
+  background: coral;
+  height: 30vh;
+}
+
+.totals{
+  background: cornflowerblue;
+  height: 30vh;
+}
+
+.team1{
+  background: gainsboro;
+  height: 30vh;
+}
+
+
+.aside1{
+  background: coral;
+}
+
+@media all and (min-width: 900px){
+  .main{
+    flex: 3;
+    height: 70vh;
+  }
+
+  .team1{
+    order: 1;
+    height: 70vh;
+  }
+
+  .team2{
+    order: 2;
+    height: 70vh;
+  }
+
+  .totals{
+    order: 4;
+    height: 70vh;
+  }
+  .main{
+    order: 2;
+  }
+
+  .footer{
+    order: 4;
+  }
+}
+
+@media all and (min-width:750px){
+  .aside{
+    flex: 1;
+  }
+}
+
+@media all and (max-width:350px){
+  .aside{
+    flex: 1;
+    height: 20px;
+  }
+
+  /* .team1{
+    
+  } */
+}
+
